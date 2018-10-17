@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	 <title>Demo</title>
+	 
+
+     <link href="css/entypo.css" rel="stylesheet">
+     <link href="css/font-awesome.min.css" rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/clevex-core.css" rel="stylesheet">
+     <link href="css/clevex-forms.css" rel="stylesheet">
+     <link href="css/plugins/scrollbar/perfect-scrollbar.css" rel="stylesheet">
+	 <link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body>
+
+     <!-- Page container -->
+     <div class="page-container">
+
+          <!-- Page sidebar -->
+          <div class="page-sidebar" id="menu">
+
+               <!-- Site header  -->
+               <header class="site-header">
+                    <div class="user-header-box">
+                         <div class="background">
+                              <img src="images/nav-head-bg.png">
+                         </div>
+                         <div class="user-header-detail">
+                              <a href="#!user"><img class="img-circle avatar" src="images/man-3.jpg"></a>
+                              <a href="#!name"><span class="white-text name">John Doe</span></a>
+                              <a href="#!email"><span class="white-text email">johndoe@gmail.com</span></a>
+                         </div>
+                    </div>
+               </header>
+               <!-- /site header -->
+
+               <!-- Main navigation -->
+               <ul id="side-nav" class="main-menu">
+                    <li><a href="home.html"><i class="icon-gauge"></i><span class="title">Dashboard</span></a></li>
+                    <li><a><i class="icon-doc-text"></i><span class="title">My Invoices</span></a></li>
+                    <li class="active"><a href="#\"><i class="fa fa-edit"></i><span class="title">New Invoice</span></a></li>
+               </ul>
+               <!-- /main navigation -->
+          </div>
+          <!-- /page sidebar -->
+
+          <!-- Main container -->
+          <div class="main-container">
+
+               <!-- Main header -->
+               <div class="main-header row">
+                    <div class="col-sm-6 col-xs-7">
+
+                         <!-- Site header  -->
+                         <div class="header-logo">
+                              <div class="menu-toggle"><a class="menu-icon" href="#menu"><i class="icon-menu"></i></a></div>
+                         </div>
+                         <!-- /site header -->
+                    </div>
+
+                    <div class="col-sm-6 col-xs-5">
+                         <div class="pull-right">
+						 
+                              <!-- User info -->
+                              <ul class="user-info">
+                                   <li class="profile-info dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> <img width="44" class="img-circle avatar" alt="" src="images/man-3.jpg"></a>
+
+                                        <!-- User action menu -->
+                                        <ul class="dropdown-menu">
+
+                                             <li><a href="#/"><i class="icon-user"></i>My profile</a></li>
+                                             <li class="divider"></li>
+                                             <li><a href="#"><i class="icon-cog"></i>Settings</a></li>
+                                             <li><a href="login.html"><i class="icon-logout"></i>Logout</a></li>
+                                        </ul>
+                                        <!-- /user action menu -->
+
+                                   </li>
+                              </ul>                 
+                         </div>
+                    </div>
+               </div> 
+			   <!-- /main header -->
+
+               <!-- Main content -->
+               <div class="main-content">
+                   
+				   <h1 class="page-title">Invoice Data</h1>
+                   					
+					<div class="row">
+						 <div class="col-lg-12">
+							  <div class="panel panel-default">
+								   <div class="panel-body">
+								   
+										<form class="form-horizontal">
+											 <div class="form-group">
+												  <label class="col-sm-2 control-label">Invoice #</label>
+												  <div class="col-sm-4">
+													   <input id="input_invoiceNum" type="text" class="form-control">
+												  </div>
+												  <div class="col-sm-6"></div>
+											 </div>
+											 <div class="line-dashed"></div>
+											 <div class="form-group">
+												  <label class="col-sm-2 control-label">Invoice Date</label>
+												  <div class="col-sm-4">
+													    <input id="input_invoiceDate" type="text" data-mask="99/99/9999" class="form-control">
+												  </div>
+												   <div class="col-sm-6"></div>
+											 </div>
+											 <div class="line-dashed"></div>
+											 <div class="form-group">
+												  <label class="col-sm-2 control-label">Delivery Date</label>
+												  <div class="col-sm-4">
+													   <input id="input_invoiceDlvDdate" type="text" data-mask="99/99/9999" class="form-control">
+												  </div>
+												  <div class="col-sm-6"></div>
+											 </div>
+											 <div class="line-dashed"></div>
+											 <div class="form-group">
+												  <label class="col-sm-2 control-label">Field Ticket</label>
+												  <div class="col-sm-4">
+													   <input id="input_fieldTicket" type="text" class="form-control">
+												  </div>
+												  <div class="col-sm-6"></div>
+											 </div>
+											 <div class="line-dashed"></div>
+											 <div class="form-group">
+												  <label class="col-sm-2 control-label">Total</label>
+												  <div class="col-sm-4">
+													  <div class="input-group">
+                                                            <span class="input-group-addon">$</span>
+                                                            <input id="input_total" type="text" class="form-control">
+                                                       </div>
+												  </div>
+												  <div class="col-sm-6"></div>
+											 </div>
+											 <div class="line-dashed"></div>
+											 <div class="form-group">
+												  <div class="col-sm-offset-2 col-sm-10">
+													   <button onclick="clickFinish(this,event)" class="btn btn-default" type="button">Finish</button>
+												  </div>
+											 </div>
+										</form>
+										
+								   </div>
+							  </div>
+						 </div>
+                    </div>
+					
+
+                   <!-- Footer -->
+                   <footer class="footer-main">
+                     EY 2018
+                   </footer>
+                   <!-- /footer -->
+
+               </div>
+               <!-- /main content -->
+
+          </div>
+          <!-- /main container -->
+
+     </div>
+     <!-- /page container -->
+     <div class="menu-backdrop fade"></div>
+     <!--Load JQuery-->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/plugins/metismenu/jquery.metisMenu.js"></script>
+     <script src="js/plugins/blockui-master/jquery-ui.js"></script>
+     <script src="js/plugins/blockui-master/jquery.blockUI.js"></script>
+
+     <script src="js/plugins/big-slide/bigslide.min.js"></script>
+     <script src="js/plugins/scrollbar/perfect-scrollbar.jquery.min.js"></script>
+	
+	 <!-- Input Mask-->
+	 <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+ 
+     <script src="js/functions.js"></script>
+	 <script src="js/custom.js"></script>
+	 
+</body>
+</html>
